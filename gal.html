@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+    <style>
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: left;
+            padding:20px;
+        }
+        nav h1{
+            margin:10px;
+            padding:5px;
+            color:azure;
+            align-items:left;
+        }
+        nav h2{
+            margin:10px;
+            padding:5px;
+            color:rgb(8, 15, 15)
+            align-items:right;
+        }
+        video{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>TRAVEL</h1>
+        <h2>Home</h2>
+        <h2>About</h2>
+        <h2>Contact</h2>
+    </nav>
+    <video src="v.mp4" controls width="150%" height="700px"></video>
+</body>
+</html>
