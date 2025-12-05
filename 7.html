@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Light Dark Mode</title>
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <h1 id="modeText">Light Mode</h1>
+
+    <button onclick="toggleMode()">Switch Mode</button>
+
+    <script>
+        function toggleMode() {
+            let body = document.getElementById("body");
+            let text = document.getElementById("modeText");
+
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                text.innerHTML = "Dark Mode";
+            } else {
+                text.innerHTML = "Light Mode";
+            }
+        }
+    </script>
+
+</body>
+</html>

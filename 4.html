@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textbox List Output</title>
+</head>
+<body>
+
+    <input type="text" id="userText" placeholder="Type something...">
+    <button onclick="press()">Enter</button>
+
+    <ul id="outputList"></ul>
+
+    <script>
+        function press() {
+            let text = document.getElementById("userText").value;
+
+            if (text.trim() === "") return;  // ignore empty input
+
+            let list = document.getElementById("outputList");
+
+            let item = document.createElement("li");
+            item.innerHTML = text;
+
+            list.appendChild(item);
+
+            document.getElementById("userText").value = ""; // clear textbox
+        }
+    </script>
+
+</body>
+</html>
